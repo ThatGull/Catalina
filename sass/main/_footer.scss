@@ -1,0 +1,122 @@
+.footer__containers {
+  display: block;
+  @media screen and(max-width:1199px) {
+    text-align: center;
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: baseline;
+  }
+  @media screen and(min-width: 768px) and (max-width: 1200px) {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  @media screen and (min-width: 1200px) {
+  }
+}
+
+.footer {
+  background-color: var(--background-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer__address {
+  font-size: 14px;
+  line-height: 1.71;
+
+  letter-spacing: 0.03em;
+  color: var(--light-text-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+  @media screen and(max-width:768px) {
+    margin-bottom: 60px;
+  }
+  @media screen and(min-width:1200px) {
+    flex-grow: 1;
+    margin-right: 70px;
+  }
+}
+.address {
+  font-style: normal;
+}
+.address__list {
+  padding: 0;
+}
+.address__link {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--primary-light-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+.address__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.footer__title {
+  display: block;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--light-text-color);
+  margin-bottom: 20px;
+  color: var(--light-text-color);
+}
+.form-email {
+  @media screen and(min-width: 768px) and (max-width: 1200px) {
+    margin: 60px auto;
+  }
+}
+.footer__form {
+  display: flex;
+  @media screen and(max-width:1199px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  @media screen and(min width:1200px) {
+    &:not(:last-child) {
+      margin-left: 12px;
+    }
+  }
+}
+
+.footer__input {
+  width: 100%;
+
+  font-size: 16px;
+  line-height: 1.25;
+
+  padding: 15px 16px;
+  border: 1px solid var(--logo-color-gray);
+  border-radius: 4px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  color: var(--light-text-color);
+  background-color: var(--background-color);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:focus {
+    border-color: var(--accent-color);
+
+    outline: none;
+  }
+  @media screen and(min-width:768px) {
+    width: 358px;
+    margin-right: 12px;
+  }
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 20px;
+  }
+}
+
+.send__icon {
+  fill: var(--light-text-color);
+}
