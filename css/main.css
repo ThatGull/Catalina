@@ -1464,6 +1464,10 @@ img {
 .mobile-menu {
   margin-bottom: auto;
 }
+#menu-button { 
+  position: absolute;
+  z-index: 9999;  
+}
 
 .mobile-menu__item:not(:last-child) {
   margin-bottom: 32px;

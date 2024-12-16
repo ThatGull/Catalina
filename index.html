@@ -2,7 +2,6 @@
 <html lang="uk">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Catalina</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -60,15 +59,15 @@
           </li>
         </ul>
         <!-- Меню -->
-        <button type="button" class="menu js-open-menu">
+        <button type="button" class="menu js-open-menu" id="menu-button">
           <svg class="menu__icon" width="40" height="40">
             <use href="./images/icons.svg#menu"></use>
           </svg>
         </button>
       </div>
     </header>
+    <!-- mainside -->
     <main>
-<!-- mainside -->
       <section class="hero">
         <div class="container">
           <h1 class="hero__title">Надійне рішення для ваших
@@ -165,7 +164,7 @@
 
           <ul class="project list">
             <li class="project__item">
-              <a class="project__link link" href="">
+              <a class="project__link">
                 <div class="project__thumb">
                   <img
                     class="project__img"
@@ -177,9 +176,9 @@
                       ./images/project-1-740.jpg 740w,
                       ./images/project-1-900.jpg 900w
                     "
-                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    sizes="(min-width: 1200px) 900px, (min-width: 768px) 740px, (min-width: 480px) 450px, (min-width: 380px) 354px, 100vw"
                     src="./images/project-1-354.jpg"
-                    alt="проєкт технокряк"
+                    alt="Індивідуальний підхід"
                   />
                   <div class="project__overlay">
                     <p class="overlay__text">
@@ -193,7 +192,7 @@
               >
             </li>
             <li class="project__item">
-              <a class="project__link link" href="">
+              <a class="project__link">
                 <div class="project__thumb">
                   <img
                     class="project__img"
@@ -205,9 +204,9 @@
                       ./images/project-2-740.jpg 740w,
                       ./images/project-2-900.jpg 900w
                     "
-                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    sizes="(min-width: 1200px) 900px, (min-width: 768px) 740px, (min-width: 480px) 450px, (min-width: 380px) 354px, 100vw"
                     src="./images/project-2-354.jpg"
-                    alt="постер New Orlea"
+                    alt="Швидкість і надійність"
                   />
                   <div class="project__overlay">
                     <p class="overlay__text">
@@ -222,7 +221,7 @@
               >
             </li>
             <li class="project__item">
-              <a class="project__link link" href="">
+              <a class="project__link">
                 <div class="project__thumb">
                   <img
                     class="project__img"
@@ -234,9 +233,9 @@
                       ./images/project-3-740.jpg 740w,
                       ./images/project-3-900.jpg 900w
                     "
-                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    sizes="(min-width: 1200px) 900px, (min-width: 768px) 740px, (min-width: 480px) 450px, (min-width: 380px) 354px, 100vw"
                     src="./images/project-3-354.jpg"
-                    alt="Ресторан Seafood"
+                    alt="Система лояльності"
                   />
                   <div class="project__overlay">
                     <p class="overlay__text">
@@ -251,7 +250,7 @@
               >
             </li>
             <li class="project__item">
-              <a class="project__link link" href="">
+              <a class="project__link">
                 <div class="project__thumb">
                   <img
                     class="project__img"
@@ -263,9 +262,9 @@
                       ./images/project-4-740.jpg 740w,
                       ./images/project-4-900.jpg 900w
                     "
-                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    sizes="(min-width: 1200px) 900px, (min-width: 768px) 740px, (min-width: 480px) 450px, (min-width: 380px) 354px, 100vw"
                     src="./images/project-4-354.jpg"
-                    alt="Проєкт Prime"
+                    alt="Підтримка 24/7"
                   />
                   <div class="project__overlay">
                     <p class="overlay__text">
@@ -280,7 +279,7 @@
               >
             </li>
             <li class="project__item">
-              <a class="project__link link" href="">
+              <a class="project__link">
                 <div class="project__thumb">
                   <img
                     class="project__img"
@@ -292,9 +291,9 @@
                       ./images/project-5-740.jpg 740w,
                       ./images/project-5-900.jpg 900w
                     "
-                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    sizes="(min-width: 1200px) 900px, (min-width: 768px) 740px, (min-width: 480px) 450px, (min-width: 380px) 354px, 100vw"
                     src="./images/project-5-354.jpg"
-                    alt="Проєкт Boxes"
+                    alt="ADR класс 2-9"
                   />
                   <div class="project__overlay">
                     <p class="overlay__text">
@@ -310,7 +309,7 @@
               >
             </li>
             <li class="project__item">
-              <a class="project__link link" href="">
+              <a class="project__link">
                 <div class="project__thumb">
                   <img
                     class="project__img"
@@ -322,9 +321,9 @@
                       ./images/project-6-740.jpg 740w,
                       ./images/project-6-900.jpg 900w
                     "
-                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    sizes="(min-width: 1200px) 900px, (min-width: 768px) 740px, (min-width: 480px) 450px, (min-width: 380px) 354px, 100vw"
                     src="./images/project-6-354.jpg"
-                    alt="Inspiration has no Borders"
+                    alt="Рефрежераторні перевезення"
                   />
                   <div class="project__overlay">
                     <p class="overlay__text">
@@ -340,7 +339,7 @@
               >
             </li>
             <li class="project__item">
-              <a class="project__link link" href="">
+              <a class="project__link">
                 <div class="project__thumb">
                   <img
                     class="project__img"
@@ -352,9 +351,9 @@
                       ./images/project-7-740.jpg 740w,
                       ./images/project-7-900.jpg 900w
                     "
-                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    sizes="(min-width: 1200px) 900px, (min-width: 768px) 740px, (min-width: 480px) 450px, (min-width: 380px) 354px, 100vw"
                     src="./images/project-7-354.jpg"
-                    alt="Видання Limited Edition"
+                    alt="Сертифікація EUR.1"
                   />
                   <div class="project__overlay">
                     <p class="overlay__text">
@@ -370,7 +369,7 @@
               >
             </li>
             <li class="project__item">
-              <a class="project__link link" href="">
+              <a class="project__link">
                 <div class="project__thumb">
                   <img
                     class="project__img"
@@ -382,9 +381,9 @@
                       ./images/project-8-740.jpg 740w,
                       ./images/project-8-900.jpg 900w
                     "
-                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    sizes="(min-width: 1200px) 900px, (min-width: 768px) 740px, (min-width: 480px) 450px, (min-width: 380px) 354px, 100vw"
                     src="./images/project-8-354.jpg"
-                    alt="Проєкт LAB"
+                    alt="Лояльні ціни"
                   />
                   <div class="project__overlay">
                     <p class="overlay__text">
@@ -400,7 +399,7 @@
               >
             </li>
             <li class="project__item">
-              <a class="project__link link" href="">
+              <a class="project__link">
                 <div class="project__thumb">
                   <img
                     class="project__img"
@@ -412,9 +411,9 @@
                       ./images/project-9-740.jpg 740w,
                       ./images/project-9-900.jpg 900w
                     "
-                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    sizes="(min-width: 1200px) 900px, (min-width: 768px) 740px, (min-width: 480px) 450px, (min-width: 380px) 354px, 100vw"
                     src="./images/project-9-354.jpg"
-                    alt="Growing Business"
+                    alt="Надаємо складські приміщення"
                   />
                   <div class="project__overlay">
                     <p class="overlay__text">
@@ -648,23 +647,23 @@
     <div class="menu-container js-menu-container" id="mobile-menu">
       <button class="menu menu-toggle js-close-menu" type="button">
         <svg width="40" height="40">
-          <use href="./images/icons.svg.svg#menu-close"></use>
+          <use href="./images/icons.svg#menu-close"></use>
         </svg>
       </button>
       <ul class="mobile-menu list">
         <li class="mobile-menu__item">
-          <a href="./index.html" class="mobile-menu__link mobile-menu__link--current link"
-            >Головна</a
-          >
+          <a href="./index.html" class="mobile-menu__link mobile-menu__link--current link">Головна</a>
         </li>
-        <li class="mobile-menu__item"><a href="" class="mobile-menu__link link">Контакти</a></li>
+        <li class="mobile-menu__item">
+          <a href="" class="mobile-menu__link link">Контакти</a>
+        </li>
       </ul>
       <ul class="mobile-contacts list">
         <li class="mobile-contacts__item">
-          <a class="mobile-contacts__link--tel link" href="tel:+380731050808"> +38 073 105 08 08</a>
+          <a class="mobile-contacts__link--tel link" href="tel:+380731050808">+38 073 105 08 08</a>
         </li>
         <li class="mobile-contacts__item">
-          <a class="mobile-contacts__link--email link" href="direct.forwarding@outlook.com">
+          <a class="mobile-contacts__link--email link" href="mailto:direct.forwarding@outlook.com">
             direct.forwarding@outlook.com
           </a>
         </li>
@@ -692,5 +691,5 @@
     ></script>
     <script defer src="js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
-  </body>
+    </body>
 </html>
